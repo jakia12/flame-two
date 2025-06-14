@@ -44,7 +44,12 @@ a {
 .floating-title {
   position: absolute;
   bottom: 8%;
-  right: 10%;
+  right: 28%;
+  color: #ffed8d; /* Text fill color */
+  text-shadow: -4px -4px 0 black, 4px -4px 0 black, -4px 4px 0 black,
+    4px 4px 0 black; /* Black outline */
+  font-weight: bold;
+  font-size: 4rem; /* Adjust size as needed */
 }
 #about {
   background: white;
@@ -857,6 +862,20 @@ footer {
   width: 50vw;
   order: 4;
   right: 0;
+}
+
+/* #about {
+  background-color: aqua;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 10px;
+} */
+
+.about-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
 
 .wrapper {
