@@ -37,9 +37,14 @@ a {
   /* padding-top: 5%; */
   background: url("../img/banner.png") no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   overflow-x: hidden;
+}
+.floating-title{
+  position: absolute;
+  bottom: 8%;
+  right: 10%;
 }
 #about {
   /* background-image: url(../img/14.png); */
@@ -176,7 +181,7 @@ nav ul li:last-child a {
 
 .about-container {
   display: flex;
-  height: 110vh;
+  /* height: 110vh; */
   align-items: center;
   justify-content: space-between;
   gap: 10px;
@@ -204,7 +209,9 @@ p {
   position: relative;
 }
 .about-right img {
-  width: 70%;
+  width: 500px;
+  max-width: 90%;
+  border-radius: 15px;
   margin-left: 7%;
   margin-top: 10%;
 }
