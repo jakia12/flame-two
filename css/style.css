@@ -910,6 +910,9 @@ footer {
   .abt-text-parent{
     width: 100%;
   }
+  .about-text{
+    font-size: 16px;
+  }
 }
 
 .wrapper {
