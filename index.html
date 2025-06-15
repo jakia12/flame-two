@@ -19,21 +19,22 @@
 
 
 <body>
-    <div class="mobile-menu">
-        <!-- <img src="./img/duke.png" alt="duke" class="logo"> -->
-        <h2 class="outline-text2">$FLAME </h2>
-        <ul>
-            <li><a href="https://www.dextools.io/app/en/bnb/pair-explorer/0xdec1b699a45d3a6daca52917ab940dc0b2bf8499?t=1749943437484" target="_blank"><img src="./img/dxw.png" alt="dextools"></a></li>
-            <li><a href="https://dexscreener.com/bsc/0xdec1b699a45d3a6daca52917ab940dc0b2bf8499" target="_blank"><img src="./img/dxsw.png" alt="dexscreener"></a></li>
-            <li><a href="https://x.com/FreedomUSD1" target="_blank"><img src="./img/xw.png" alt="x"></a></a></li>
-            <li><a href="tglink" target="_blank"><img src="./img/tgw.png" alt="telegram"></a></a>
-            </li>
-            <li><a href="#about">About</a></li>
+   
 
-            <li><a href="#tokenomics">Tokenomics</a></li>
-            <li><a href=" https://pancakeswap.finance/swap?outputCurrency=0x9e4233580afc4431bc9f4b4e8aa56e9f4b7b4444" target="_blank"></a>Buy now</li>
-        </ul>
+    <!-- hamburger menu -->
+      <header class="header">
+    <div class="logo">$FLAME</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="nav-menu" id="nav-menu">
+      <ul class="mb_menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="https://pancakeswap.finance/swap?outputCurrency=0x9e4233580afc4431bc9f4b4e8aa56e9f4b7b4444" target="_blank">Buy Now</a></li>
+        
+      </ul>
     </div>
+  </header>
+    
     <section id="main" class="main">
         <img src="./img/usd1.png" alt="star" class="star star-1">
         <img src="./img/usd1.png" alt="star" class="star star-2">
@@ -43,7 +44,8 @@
                 <span></span>
                 <span></span>
             </div> -->
-            <header data-aos="fade-down">
+             
+            <header data-aos="fade-down" class="lg_menu">
                 <h2 class="outline-text2"> </h2>
                 <!-- <img src="./img/duke.png" alt="duke" class="logo"> -->
                 <nav>
@@ -62,7 +64,7 @@
                         <li><a href="#about">About</a></li>
 
                         <li><a href="#tokenomics">Tokenomics</a></li>
-                        <li style="background-color: rgb(255, 100, 126);"><a href=" https://pancakeswap.finance/swap?outputCurrency=0x9e4233580afc4431bc9f4b4e8aa56e9f4b7b4444" target="_blank"></a>Buy now
+                        <li style="background-color: rgb(255, 100, 126);"><a href="https://pancakeswap.finance/swap?outputCurrency=0x9e4233580afc4431bc9f4b4e8aa56e9f4b7b4444" target="_blank"></a>Buy now
                         </li>
                     </ul>
                 </nav>
@@ -80,7 +82,7 @@
         </div>
         <h2 class=" floating-title"> FLAME OF FREEDOM</h2>
     </section>
-    <section class="about-sec">
+    <section class="about-sec" id="about">
         <!-- <div class="marquee">
             <span>$FLAME</span>
             <span>$FLAME</span>
@@ -263,6 +265,15 @@
     </footer>
     <script src="./js/aos.js"></script>
     <script src="./js/script.js"></script>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('nav-menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+    </script>
 </body>
 
 </html>
